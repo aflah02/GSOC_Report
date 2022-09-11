@@ -17,9 +17,6 @@ My PRs:
 
 ## Data Augmentation Techniques
 
-- []
-- [Random Swaps]
-- 
 | PR Link   |      Status      |  Description |
 |----------|:-------------:|------:|
 | [Random Deletion Layer](https://github.com/keras-team/keras-nlp/pull/214) |  Merged | Adds the Random Deletion operation as a Keras Layer described in the paper [EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks](https://arxiv.org/pdf/1901.11196.pdf) |
@@ -27,4 +24,16 @@ My PRs:
 | [Random Replacement Layer](https://github.com/keras-team/keras-nlp/pull/274) | In Review | Adds the Random Replacement operation as a Keras Layer described in the paper [EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks](https://arxiv.org/pdf/1901.11196.pdf) |
 | [Random Insertion Layer](https://github.com/keras-team/keras-nlp/pull/235) | In Review | Adds the Random Insertion operation as a Keras Layer described in the paper [EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks](https://arxiv.org/pdf/1901.11196.pdf) |
 | [Minor fixes to the Random Deletion Layer](https://github.com/keras-team/keras-nlp/pull/286) | Merged | Fixed some minor bugs in the Deletion Layer |
-| [Docstring and Test Fixes for Random Deletion Layer](https://github.com/keras-team/keras-nlp/pull/339) | Merged | Made fixes in the Random Deletion Layer to improve Docstring and remove redundancy in tests |
+| [Docstring and Test Fixes for Random Deletion Layer](https://github.com/keras-team/keras-nlp/pull/339) | Merged | Made fixes in the Random Deletion Layer to improve docstring and remove redundancy in tests |
+
+## Tokenizers
+
+| PR Link   |      Status      |  Description |
+|----------|:-------------:|------:|
+| [Fixes for the WordPieceTrainer](https://github.com/keras-team/keras-nlp/pull/293) | Merged | These tests removed dependency between tests in the docstring and those in the test files for file handling |
+| [Created a trainer for SentencePiece Tokenizer](https://github.com/keras-team/keras-nlp/pull/281) | Merged | Added a trainer which Trains a SentencePiece vocabulary from an input dataset or a list of filenames. |
+| [Fixed Bug in Unicode Tokenizer Vocab Size](https://github.com/keras-team/keras-nlp/pull/243) | Merged | Fixed bug caused by mistake in argument name |
+| [Added a vocabulary_size argument to UnicodeCharacterTokenizer](https://github.com/keras-team/keras-nlp/pull/163) | Merged | Incorporated capping OOV tokens in the UnicodeCharacterTokenizer by setting vocabulary_size |
+| [Adding Utility to Detokenize as list of Strings to Tokenizer Base Class](https://github.com/keras-team/keras-nlp/pull/124) | Merged | Added a utility which decodes tensors into list of strings over bytestring recursively |
+| [UnicodeCharacterTokenizer ](https://github.com/keras-team/keras-nlp/pull/100) | Merged | Added a new tokenizer for tokenization into Unicode Characters |
+| [Fixing rank 1 outputs for WordPieceTokenizer ](https://github.com/keras-team/keras-nlp/pull/92) | Merged | Fixed issue with Rank 1 outputs in WordPieceTokenizer |
