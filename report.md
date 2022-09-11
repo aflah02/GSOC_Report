@@ -37,3 +37,14 @@ My PRs:
 | [Adding Utility to Detokenize as list of Strings to Tokenizer Base Class](https://github.com/keras-team/keras-nlp/pull/124) | Merged | Added a utility which decodes tensors into list of strings over bytestring recursively |
 | [UnicodeCharacterTokenizer ](https://github.com/keras-team/keras-nlp/pull/100) | Merged | Added a new tokenizer for tokenization into Unicode Characters |
 | [Fixing rank 1 outputs for WordPieceTokenizer ](https://github.com/keras-team/keras-nlp/pull/92) | Merged | Fixed issue with Rank 1 outputs in WordPieceTokenizer |
+
+## General Work
+
+| PR Link   |      Status      |  Description |
+|----------|:-------------:|------:|
+| [Guide on Open Ended Text Generation Guide KerasNLP](https://github.com/keras-team/keras-io/pull/956) | In Review | Added a guide for `keras.io` which showcases tradeoff between Byte and Unicode Tokenizer |
+| [Migrating from Datasets to TFDS for GLUE Example](https://github.com/keras-team/keras-nlp/pull/340) | Merged | Removed dependency on Datasets for GLUE and instead migrated to TFDS |
+| [Added Debug Info for Line Ending Issues ](https://github.com/keras-team/keras-nlp/pull/64) | Merged | Added some documentation to address issues caused while running linters in wrong file ending mode |
+| [Fixed Import Error ](https://github.com/keras-team/keras-nlp/pull/161) | Merged | Fixed error caused by missing init file |
+| [Fixed Import for top_p_search util ](https://github.com/keras-team/keras-nlp/pull/245) | Merged | Fixed error caused by missing import in init file for top_p_search |
+| [Added Kernel and Bias Initializers](https://github.com/keras-team/keras-nlp/pull/50) | Merged | Added Kernel and Bias Initializers to Encoder and Decoder classes |
