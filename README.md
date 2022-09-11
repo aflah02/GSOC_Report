@@ -9,7 +9,7 @@ First things first I'm really thankful to Google for organizing this wonderful e
 
 My work mainly focused on contributing to KerasNLP a new library which is currently pre-release and aims to build "Industry-strength Natural Language Processing workflows with Keras"
 
-I started contributing to the library in March 2022 and really liked the codebase as it was pretty easy to navigate through. 
+I started contributing to the library in March 2022 and really liked the codebase as it was pretty easy to navigate through and the maintainers were really helpful in guiding beginners!
 
 I mainly worked towards adding Data Augmentation Techniques, tokenizers and tokenizer training utilities, fixing bugs, adding new options to pre-existing utilities and writing tutorials for `keras.io`
 
@@ -42,6 +42,7 @@ My PRs:
 
 | PR Link   |      Status      |  Description |
 |----------|:-------------:|------:|
+| [Adding Eval Script for BERT on SQUAD Dataset](https://github.com/keras-team/keras-nlp/issues/285)| In Works | Aims to add an Eval Script for BERT on SQUAD Dataset |
 | [Guide on Open Ended Text Generation Guide KerasNLP](https://github.com/keras-team/keras-io/pull/956) | In Review | Added a guide for `keras.io` which showcases tradeoff between Byte and Unicode Tokenizer |
 | [Migrating from Datasets to TFDS for GLUE Example](https://github.com/keras-team/keras-nlp/pull/340) | Merged | Removed dependency on Datasets for GLUE and instead migrated to TFDS |
 | [Added Debug Info for Line Ending Issues ](https://github.com/keras-team/keras-nlp/pull/64) | Merged | Added some documentation to address issues caused while running linters in wrong file ending mode |
