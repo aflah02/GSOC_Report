@@ -69,9 +69,5 @@ This guide aims to showcase our tokenizers to the end-users and also attract att
 | [Fixed Import Error ](https://github.com/keras-team/keras-nlp/pull/161) | Merged | Fixed error caused by missing init file |
 | [Fixed Import for top_p_search util ](https://github.com/keras-team/keras-nlp/pull/245) | Merged | Fixed error caused by missing import in init file for top_p_search |
 | [Added Kernel and Bias Initializers](https://github.com/keras-team/keras-nlp/pull/50) | Merged | Added Kernel and Bias Initializers to Encoder and Decoder classes |
-<<<<<<< HEAD
 
 These are minor bugs and fixes along with some basic features which I worked towards fixing/adding.
-
-=======
->>>>>>> 365e3d0675b625e752f05d06cb296409e4864ad1
