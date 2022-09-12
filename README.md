@@ -26,6 +26,10 @@ My PRs:
 | [Minor fixes to the Random Deletion Layer](https://github.com/keras-team/keras-nlp/pull/286) | Merged | Fixed some minor bugs in the Deletion Layer |
 | [Docstring and Test Fixes for Random Deletion Layer](https://github.com/keras-team/keras-nlp/pull/339) | Merged | Made fixes in the Random Deletion Layer to improve docstring and remove redundancy in tests |
 
+The work was majorly aimed towards adding support for Data Augmentation Techniques in the form of Keras Pre-Processing Layers. The Layers are graph mode compatible as well and hence work with tf datasets which are more efficient. The layers also provide granular control such as deciding which tokens to skip using a list, a tf function or even a native python function. Insertion and Replacement layers also have fine grained control over how to choose the new token using either a list, a tf function or a native python function.
+
+Major portion of my GSoC timeline went towards this work as this included several API redesigns to make it usable for the end users and also needed to be graph mode compatible to be usable with tf datasets
+
 ## Tokenizers
 
 | PR Link   |      Status      |  Description |
@@ -38,14 +42,33 @@ My PRs:
 | [UnicodeCharacterTokenizer ](https://github.com/keras-team/keras-nlp/pull/100) | Merged | Added a new tokenizer for tokenization into Unicode Characters |
 | [Fixing rank 1 outputs for WordPieceTokenizer ](https://github.com/keras-team/keras-nlp/pull/92) | Merged | Fixed issue with Rank 1 outputs in WordPieceTokenizer |
 
-## General Work
+Tokenizers are an essential part of any NLP Library. KerasNLP also has its share of tokenizers. I majorly contributed to the building of the UnicodeCharacterTokenizer, some fixes for WordPieceTokenizer and Trainer and creating a utility to train create proto files for SentencePiece Tokenizer.
+
+## BERT Model Related Work
 
 | PR Link   |      Status      |  Description |
 |----------|:-------------:|------:|
 | [Adding Eval Script for BERT on SQUAD Dataset](https://github.com/keras-team/keras-nlp/issues/285)| In Works | Aims to add an Eval Script for BERT on SQUAD Dataset |
-| [Guide on Open Ended Text Generation Guide KerasNLP](https://github.com/keras-team/keras-io/pull/956) | In Review | Added a guide for `keras.io` which showcases tradeoff between Byte and Unicode Tokenizer |
 | [Migrating from Datasets to TFDS for GLUE Example](https://github.com/keras-team/keras-nlp/pull/340) | Merged | Removed dependency on Datasets for GLUE and instead migrated to TFDS |
+
+This work is mainly towards adding more features to the BERT model present in the repository which makes it easy for the end user to rebuild models by modifying the code. I worked towards changing dataset dependency and also I'm currently working on adding an Eval Script for SQUAD Dataset.
+
+## Guides
+
+| PR Link   |      Status      |  Description |
+|----------|:-------------:|------:|
+| [Guide on Open Ended Text Generation Guide KerasNLP](https://github.com/keras-team/keras-io/pull/956) | In Review | Added a guide for `keras.io` which showcases tradeoff between Byte and Unicode Tokenizer |
+
+This guide aims to showcase our tokenizers to the end-users and also attract attention towards the library
+
+## General Work
+
+| PR Link   |      Status      |  Description |
+|----------|:-------------:|------:|
 | [Added Debug Info for Line Ending Issues ](https://github.com/keras-team/keras-nlp/pull/64) | Merged | Added some documentation to address issues caused while running linters in wrong file ending mode |
 | [Fixed Import Error ](https://github.com/keras-team/keras-nlp/pull/161) | Merged | Fixed error caused by missing init file |
 | [Fixed Import for top_p_search util ](https://github.com/keras-team/keras-nlp/pull/245) | Merged | Fixed error caused by missing import in init file for top_p_search |
 | [Added Kernel and Bias Initializers](https://github.com/keras-team/keras-nlp/pull/50) | Merged | Added Kernel and Bias Initializers to Encoder and Decoder classes |
+
+These are minor bugs and fixes along with some basic features which I worked towards fixing/adding.
+
